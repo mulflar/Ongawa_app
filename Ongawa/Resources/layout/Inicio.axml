@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@color/ongawa_color">
+    <Button
+        android:text="@string/loginOut"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/logOutButt"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:onClick="logout" />
+    <TextView
+        android:text="@string/label1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <ImageButton
+            android:src="@android:drawable/ic_dialog_map"
+            android:id="@+id/botGetLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:layout_gravity="center_vertical"
+            android:text="direccion" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="35dp">
+        <TextView
+            android:text="@string/label3"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView2" />
+        <TextView
+            android:text="@string/gettingLoc"
+            android:id="@+id/LocStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progBar"
+            android:indeterminate="true"
+            android:layout_marginRight="55dp" />
+    </LinearLayout>
+    <TextView
+        android:text="@string/label2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label2"
+        android:layout_marginLeft="50dp" />
+    <EditText
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/refFam"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp" />
+    <Button
+        android:text="@string/newButt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newButt"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:onClick="nuevo" />
+    <TextView
+        android:text="@string/label4"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label4"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp" />
+    <Button
+        android:text="@string/histButt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/histButt"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="Ongawa" parent="@style/_Ongawa"/>
+
+  <style name="_Ongawa">
+
+    <item name="android:checkboxStyle">@style/CheckBoxOngawa</item>
+
+    <item name="android:buttonStyle">@style/ButtonOngawa</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonOngawa</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleOngawa</item>
+
+    <item name="android:listViewStyle">@style/ListViewOngawa</item>
+
+    <item name="android:listViewWhiteStyle">@style/ListViewOngawa.White</item>
+
+    <item name="android:spinnerItemStyle">@style/SpinnerItemOngawa</item>
+
+  </style>
+
+</resources>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ongawa_color">
+    <TextView
+        android:text="@string/sanlabel1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sanlab1"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:text="@string/sanlabel2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sanlabel2"
+        android:layout_marginLeft="55dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_gravity="center_horizontal">
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/losa_madera"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/madera"
+            android:tint="#5f9ea0ff" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/losa_piedra"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ceramica" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/losa_hormigon"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/hormigon" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/losa_ceramica"
+            android:src="@drawable/piedra" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:text="@string/sanlabel3"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sanlabel3"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical" />
+        <ImageView
+            android:src="@drawable/gota"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView1"
+            android:layout_marginRight="20dp"
+            android:background="#9acdd6" />
+        <TextView
+            android:text="@string/sanlabel4"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sanlabel4"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical" />
+        <ImageView
+            android:src="@drawable/ventilacion"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView2"
+            android:background="#9acdd6" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_marginLeft="55dp">
+        <ToggleButton
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/toggleAgua"
+            android:textOff="@string/no"
+            android:textOn="@string/si"
+            android:textColor="@android:color/white" />
+        <ToggleButton
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/toggleVent"
+            android:layout_marginLeft="75dp"
+            android:textOff="@string/no"
+            android:textOn="@string/si"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:text="@string/sanlabel5"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sanlabel5"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical" />
+        <ImageView
+            android:src="@drawable/mosca"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView3"
+            android:layout_marginRight="20dp"
+            android:background="#9acdd6" />
+        <TextView
+            android:text="@string/sanlabel6"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sanlabel6"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical" />
+        <ImageView
+            android:src="@drawable/olor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView4"
+            android:background="#9acdd6" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout5"
+        android:layout_marginLeft="55dp">
+        <ToggleButton
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/toggleMosc"
+            android:textOff="@string/no"
+            android:textOn="@string/si"
+            android:textColor="@android:color/white" />
+        <ToggleButton
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/toggleOlor"
+            android:layout_marginLeft="75dp"
+            android:textOff="@string/no"
+            android:textOn="@string/si"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+    <TextView
+        android:text="@string/sanlabel7"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="70dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout6"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout7"
+            android:layout_marginLeft="20dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout9"
+                android:layout_gravity="right">
+                <TextView
+                    android:text="@string/sanlabel8"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sanlabel8"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center_vertical" />
+                <ImageView
+                    android:src="@drawable/mosca"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/imageView3"
+                    android:layout_marginRight="20dp"
+                    android:background="#9acdd6" />
+            </LinearLayout>
+            <ToggleButton
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:id="@+id/togglePriv"
+                android:layout_marginLeft="75dp"
+                android:textOff="@string/no"
+                android:textOn="@string/si"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout8"
+            android:layout_marginLeft="30dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout11"
+                android:layout_marginBottom="20dp">
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/cierre_cemento"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/cemento" />
+                <ImageButton
+                    android:layout_width="50.0dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/cierre_ladrillo"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ladrillo" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout12">
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/cierre_madera"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/madera" />
+                <ImageButton
+                    android:src="@drawable/candado"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/cierre_candado"
+                    android:layout_marginRight="50dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout10"
+        android:layout_marginTop="5dp">
+        <Button
+            android:text="@string/atras"
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:onClick="atras" />
+        <Button
+            android:text="@string/siguiente"
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:onClick="siguiente" />
+    </LinearLayout>
+</LinearLayout>

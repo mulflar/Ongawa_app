@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ApplicationName">Ongawa</string>
+  <string name="getLoc">Obtener Localización</string>
+  <string name="gettingLoc">Obteniendo Localización</string>
+  <string name="userHint">Usuario</string>
+  <string name="passHint">Contraseña</string>
+  <string name="loginBot">Login</string>
+  <string name="loginOut">Cerrar sesión</string>
+  <string name="newButt">Nuevo Registro</string>
+  <string name="histButt">Consultar</string>
+  <string name="label1">Ubicación</string>
+  <string name="label2">Referencia de la familia</string>
+  <string name="label3">Estado GPS:</string>
+  <string name="label4">Listado de Registros</string>
+  <string name="awaitLoc">No se puede obtener la ubicación, intentelo de nuevo en unos segundos</string>
+  <string name="errorLoc">¿Tiene el dispositivo la ubicación activada?</string>
+  <string name="errorEmptyForm">Alguno de los campos esta vacio</string>
+  <string name="errorWrongUser">Datos de acceso incorrectos</string>
+  <string name="sanlabel1">Estado de la Letrina</string>
+  <string name="sanlabel2">Losa</string>
+  <string name="sanlabel3">Agua</string>
+  <string name="sanlabel4">Ventilación</string>
+  <string name="sanlabel5">Moscas</string>
+  <string name="sanlabel6">Olor</string>
+  <string name="sanlabel7">Cierre</string>
+  <string name="sanlabel8">Privacidad</string>
+
+  <string name="si">SI</string>
+  <string name="no">NO</string>
+  <string name="siguiente">Siguiente</string>
+  <string name="atras">Atrás</string>
+  <string name="aceptar">Aceptar</string>
+
+  <string name="reslabel1">Resumen/Detalle</string>
+  <string name="reslabel2">Ubicación</string>
+  <string name="reslabel3">Referencia de la familia</string>
+  <string name="reslabel4">Ubicación</string> 
+  <string name="reslabel5">Losa</string>
+  <string name="reslabel6">Cierre</string>
+  <string name="reslabel7">Ventilación</string>
+  <string name="reslabel8">Agua</string>
+  <string name="reslabel9">Moscas</string>
+  <string name="reslabel10">Olor</string>
+  <string name="reslabel11">Privacidad</string>
+
+</resources>
