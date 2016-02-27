@@ -26,7 +26,7 @@ namespace Ongawa.WebReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Web.Services.WebServiceBindingAttribute(Name="encuestaSoap", Namespace="http://tempuri.org/")]
+    [System.Web.Services.WebServiceBindingAttribute(Name="encuestaSoap", Namespace="http://40.85.130.141/")]
     public partial class encuesta : System.Web.Services.Protocols.SoapHttpClientProtocol {
         
         private System.Threading.SendOrPostCallback insertuserOperationCompleted;
@@ -83,7 +83,7 @@ namespace Ongawa.WebReference {
         public event insertregCompletedEventHandler insertregCompleted;
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/insertuser", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://40.85.130.141/insertuser", RequestNamespace="http://40.85.130.141/", ResponseNamespace="http://40.85.130.141/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public void insertuser(string usuario, string contraseña, string email, int telefono, string zona) {
             this.Invoke("insertuser", new object[] {
                         usuario,
@@ -119,7 +119,7 @@ namespace Ongawa.WebReference {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/comprobaruser", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://40.85.130.141/comprobaruser", RequestNamespace="http://40.85.130.141/", ResponseNamespace="http://40.85.130.141/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public int comprobaruser(string usuario, string pass, string zona) {
             object[] results = this.Invoke("comprobaruser", new object[] {
                         usuario,
@@ -152,7 +152,7 @@ namespace Ongawa.WebReference {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/insertreg", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://40.85.130.141/insertreg", RequestNamespace="http://40.85.130.141/", ResponseNamespace="http://40.85.130.141/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public void insertreg(string encuesta_r, string zona) {
             this.Invoke("insertreg", new object[] {
                         encuesta_r,

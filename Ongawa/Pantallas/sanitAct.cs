@@ -48,10 +48,13 @@ namespace Ongawa.Pantallas
 
             cierre_cem = FindViewById<ImageButton>(Resource.Id.cierre_cemento);
             cierre_cem.Click += cierre_cem_OnClick;
+
             cierre_can = FindViewById<ImageButton>(Resource.Id.cierre_candado);
             cierre_can.Click += cierre_can_OnClick;
+
             cierre_mad = FindViewById<ImageButton>(Resource.Id.cierre_madera);
             cierre_mad.Click += cierre_mad_OnClick;
+
             cierra_lad = FindViewById<ImageButton>(Resource.Id.cierre_ladrillo);
             cierra_lad.Click += cierra_lad_OnClick;
         }

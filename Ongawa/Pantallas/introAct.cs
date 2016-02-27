@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 namespace Ongawa.Pantallas
 {
     [Activity(Icon = "@drawable/icon", ScreenOrientation = ScreenOrientation.Portrait)]
-    public class introAct : Activity//, ILocationListener
+    public class introAct : Activity, ILocationListener
     {
         Location _currentLocation;
         LocationManager _locationManager;
@@ -33,10 +33,10 @@ namespace Ongawa.Pantallas
             estadoLoc = FindViewById<TextView>(Resource.Id.LocStatus);
             ubicacion = FindViewById<TextView>(Resource.Id.address);
             datos = new encuesta_raw();
-            //InitializeLocationManager();
+            InitializeLocationManager();
         }
 
-        /*void InitializeLocationManager()
+        void InitializeLocationManager()
         {
             _locationManager = (LocationManager)GetSystemService(LocationService);
             Criteria criteriaForLocationService = new Criteria
@@ -56,23 +56,23 @@ namespace Ongawa.Pantallas
                 _locationProvider = string.Empty;
                 estadoLoc.Text = GetString(Resource.String.errorLoc);
             }
-        }*/
+        }
 
-        void AddressButton_OnClick(object sender, EventArgs eventArgs)
+        async void AddressButton_OnClick(object sender, EventArgs eventArgs)
         {
-            /*if (_currentLocation == null)
+            if (_currentLocation == null)
             {
                 estadoLoc.Text = GetString(Resource.String.awaitLoc);
                 return;
             }
             Address address = await ReverseGeocodeCurrentLocation();
-            estadoLoc.Text = address.CountryName + ", " + address.Locality + ", " + address.GetAddressLine(0);*/
+            estadoLoc.Text = address.CountryName + ", " + address.Locality + ", " + address.GetAddressLine(0);
             estadoLoc.Text = "Ubicado";
             ubicacion.Text = "Centro, Alicante, Alicante, España";
             ProgressBar prog = FindViewById<ProgressBar>(Resource.Id.progBar);
             prog.Visibility = ViewStates.Invisible;
         }
-        /*async Task<Address> ReverseGeocodeCurrentLocation()
+        async Task<Address> ReverseGeocodeCurrentLocation()
         {
             Geocoder geocoder = new Geocoder(this);
             IList<Address> addressList =
@@ -108,14 +108,14 @@ namespace Ongawa.Pantallas
         }
         public void OnProviderDisabled(string provider) { }
         public void OnProviderEnabled(string provider) { }
-        public void OnStatusChanged(string provider, Availability status, Bundle extras) { }*/
+        public void OnStatusChanged(string provider, Availability status, Bundle extras) { }
 
         [Java.Interop.Export("nuevo")]
         public void nuevo(View view)
         {
             datos.direccion = ubicacion.Text;
-            datos.lat = (long)38.3431845;// (long)_currentLocation.Latitude;
-            datos.lon = (long)-0.48609739999999996;// _currentLocation.Longitude;
+            datos.lat = (long)_currentLocation.Latitude;
+            datos.lon = (long)_currentLocation.Longitude;
             datos.fam = FindViewById<TextView>(Resource.Id.refFam).Text;
             var activity = new Intent(this, typeof(sanitAct));
             activity.PutExtra("encuesta", JsonConvert.SerializeObject(datos));
